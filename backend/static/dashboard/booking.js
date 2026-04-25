@@ -445,3 +445,5 @@ function toggleNotification() {
 setInterval(() => {
   checkNewBooking();
 }, 15000); // 15s
+
+
