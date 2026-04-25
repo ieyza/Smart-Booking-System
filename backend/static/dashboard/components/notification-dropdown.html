@@ -1,0 +1,24 @@
+<!-- NOTIFICATION BELL -->
+
+<div class="notif-wrapper position-relative">
+
+  <!-- BELL BUTTON -->
+  <button class="btn btn-light btn-sm" onclick="toggleNotification()">
+    🔔
+  </button>
+
+  <!-- RED BADGE -->
+  <span id="notifBadge" class="notif-badge hidden">
+    1
+  </span>
+
+  <!-- DROPDOWN -->
+  <div id="notifDropdown" class="notif-dropdown hidden">
+
+    <p class="notif-item">
+      New booking just received on <span id="notifTime"></span>
+    </p>
+
+  </div>
+
+</div>

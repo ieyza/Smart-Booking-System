@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: #f9fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Smooth scroll feel */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default section spacing (whitespace penting) */
+section {
+  padding: 100px 20px;
+}

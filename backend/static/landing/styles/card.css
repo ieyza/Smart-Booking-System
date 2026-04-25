@@ -1,0 +1,299 @@
+/* ===============================
+   GLOBAL CARD BASE
+=============================== */
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.06),
+        inset 0 0 0 1px rgba(255,255,255,0.6);
+}
+
+/* ===============================
+   ADVANTAGES CARD
+=============================== */
+#advantages .card {
+    height: 100%;
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* STYLE */
+#advantages .card.adv-card {
+    border: 3px solid #9370DB;
+    color: #111;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TOP ACCENT LINE */
+#advantages .card.adv-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #9370DB;
+}
+
+/* GLOW EFFECT */
+#advantages .card.adv-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(147,112,219,0.12), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* ICON */
+#advantages .card.adv-card i {
+    color: #9370DB;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    background: rgba(147,112,219,0.1);
+    padding: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* TEXT */
+#advantages .card.adv-card p {
+    color: #555;
+}
+
+/* HOVER */
+#advantages .card.adv-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(147,112,219,0.2);
+    border-color: #6019ed;
+}
+
+#advantages .card.adv-card:hover::after {
+    opacity: 1;
+}
+
+#advantages .card.adv-card:hover i {
+    transform: scale(1.15);
+}
+
+
+/* ===============================
+   FEATURES CARD
+=============================== */
+#features .card {
+    height: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* STYLE */
+#features .card.feat-card {
+    border: 3px solid #66CDAA;
+    color: #111;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TOP ACCENT */
+#features .card.feat-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #66CDAA;
+}
+
+/* GLOW */
+#features .card.feat-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(102,205,170,0.12), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* ICON */
+#features .card.feat-card i {
+    color: #66CDAA;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    background: rgba(102,205,170,0.12);
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* TEXT */
+#features .card.feat-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* HOVER */
+#features .card.feat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(102,205,170,0.2);
+    border-color: #3cbfa3;
+}
+
+#features .card.feat-card:hover::after {
+    opacity: 1;
+}
+
+#features .card.feat-card:hover i {
+    transform: scale(1.15);
+}
+
+
+/* ===============================
+   TYPOGRAPHY IMPROVEMENT
+=============================== */
+.card h4, .card h5 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* ===============================
+   TARGET USER CARD (FINAL CLEAN)
+=============================== */
+#target-user .user-card {
+    width: 100%;
+    max-width: 220px;           /* compact card */
+    padding: 25px 20px;
+    border-radius: 18px;
+    background: #ffffff;
+    text-align: center;
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+}
+
+/* IMAGE (FIX RATIO & SIZE) */
+.user-img {
+    width: 90px;                /* smaller, clean */
+    height: 90px;
+    object-fit: cover;          /* crop, not stretch */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 12px auto;
+
+   background: linear-gradient(#fff, #fff) padding-box,
+            linear-gradient(135deg, #9370DB, #66CDAA) border-box;
+    border: 4px solid transparent;
+}
+
+/* TEXT */
+#target-user h5 {
+    font-weight: 600;
+    color: #111;
+    margin-top: 5px;
+}
+
+/* HOVER EFFECT */
+#target-user .user-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+    border-color: #9370DB;
+}
+
+/* IMAGE HOVER */
+#target-user .user-card:hover .user-img {
+    border-color: #9370DB;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* ===============================
+   FLOW SECTION - PREMIUM UI
+=============================== */
+
+.flow-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+/* =========================
+   FLOW CARD UX
+========================= */
+
+.flow-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* hover effect */
+.flow-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+}
+
+/* clickable */
+.flow-clickable {
+    cursor: pointer;
+}
+
+/* title */
+.flow-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* image */
+.flow-img {
+    max-height: 380px;
+    object-fit: contain;
+}
+
+/* hover hint */
+.flow-hint {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* show hint on hover */
+.flow-clickable:hover .flow-hint {
+    opacity: 1;
+    color: #9370DB;
+}
+
+/* image zoom */
+.flow-clickable img {
+    transition: transform 0.3s ease;
+}
+
+.flow-clickable:hover img {
+    transform: scale(1.03);
+}

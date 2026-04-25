@@ -1,0 +1,168 @@
+/* =========================
+   BASE BACKGROUND
+========================= */
+body.bg-soft {
+  background: #f7f8fc; /* same as admin dashboard */
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* =========================
+   CARD (BOOKING WRAPPER)
+========================= */
+.premium-card {
+  max-width: 850px;   /* control width */
+  margin: auto;
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.premium-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.premium-input {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 8px 10px;   /* reduce size */
+  font-size: 13px;     /* smaller text */
+  height: 38px;        /* standard input height */
+  transition: all 0.2s ease;
+}
+
+/* =========================
+   HEADER SECTION (ROOM TITLE)
+========================= */
+.card-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+}
+
+.text-primary-custom {
+  color: #9370DB;
+  font-weight: 700;
+}
+
+textarea.premium-input {
+  height: auto;
+  min-height: 90px;
+  padding: 10px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.room-img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* =========================
+   LABELS
+========================= */
+label {
+  font-size: 12.5px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+/* REQUIRED STAR */
+.req {
+  color: #b00020; /* consistent danger tone */
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+/* =========================
+   INPUT FIELDS
+========================= */
+.premium-input {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: #fff;
+}
+
+.premium-input:focus {
+  border-color: #9370DB;
+  box-shadow: 0 0 0 3px rgba(147,112,219,0.15);
+  outline: none;
+}
+
+/* READONLY INPUT LOOK */
+.premium-input[readonly] {
+  background: #f3f4f6;
+  color: #666;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary-custom {
+  background: #9370DB;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+  background: #7a5ccf;
+  transform: translateY(-1px);
+}
+
+/* OUTLINE SECONDARY (BACK BUTTON) */
+.btn-outline-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* spacing icon + text */
+}c
+
+/* RESET BUTTON (danger soft) */
+.btn-outline-danger {
+  border-radius: 12px;
+  font-size: 14px;
+  border: 1px solid #ffc9c9;
+  color: #b00020;
+  background: transparent;
+}
+
+.btn-outline-danger:hover {
+  background: #ffe0e0;
+  color: #b00020;
+}
+
+/* =========================
+   FORM SPACING
+========================= */
+.form-section {
+  margin-top: 10px;
+}
+
+h5 {
+  font-weight: 600;
+  color: #222;
+}
+
+/* =========================
+   VALIDATION STATE (OPTIONAL POLISH)
+========================= */
+.was-validated .form-control:invalid {
+  border-color: #b00020;
+}
+
+.was-validated .form-control:valid {
+  border-color: #10b981;
+}

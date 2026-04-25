@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking Confirmation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/confirmation.css') }}">
+</head>
+
+<body>
+
+<div class="container py-5">
+
+  <!-- Top Right -->
+  <div class="d-flex justify-content-end mb-4">
+    <a href="/rooms" class="btn btn-outline-primary rounded-pill px-4">
+      ← Room List
+    </a>
+  </div>
+
+  <!-- Card -->
+  <div class="card confirmation-card shadow-sm border-0 mx-auto">
+    <div class="card-body p-2 p-md-4">
+
+      <h4 class="mb-4 fw-semibold">Booking Summary</h4>
+
+      <div class="row g-4 align-items-center">
+
+        <!-- Image -->
+        <div class="col-md-4 text-center">
+          <img id="roomImage" 
+               src="{{ url_for('static', filename='images/rooms/default.jpg') }}" 
+               class="img-fluid rounded-4 shadow-sm room-img">
+        </div>
+
+        <!-- ✅ SUMMARY CARD STYLE -->
+        <div class="col-md-8">
+
+          <div class="summary-container">
+
+            <div class="summary-item">
+              <span class="label">Room ID</span>
+              <span class="value" id="roomId">-</span>
+            </div>
+
+            <div class="summary-item">
+              <span class="label">Room Name</span>
+              <span class="value" id="roomName">-</span>
+            </div>
+
+            <div class="summary-item highlight">
+              <span class="label">📅 Date</span>
+              <span class="value" id="date">-</span>
+            </div>
+
+            <div class="summary-item highlight">
+              <span class="label">⏰ Time</span>
+              <span class="value">
+                <span id="fromTime">-</span> - 
+                <span id="toTime">-</span>
+              </span>
+            </div>
+
+            <div class="summary-item">
+              <span class="label">Purpose</span>
+              <span class="value" id="purpose">-</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex justify-content-between mt-4">
+
+        <button class="btn btn-outline-secondary px-4" onclick="goBack()">
+          Edit
+        </button>
+
+       <button class="btn-confirm px-4" onclick="confirmBooking()">
+          Confirm Booking
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='js/confirmation.js') }}"></script>
+
+</body>
+</html>
