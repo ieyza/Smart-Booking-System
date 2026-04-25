@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rooms Page | Smart Booking System</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- FullCalendar -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/rooms.css">
+</head>
+
+<body>
+
+<div class="container-fluid p-4">
+
+  
+  <!-- PAGE TITLE -->
+  <div class="mb-3">
+    <h2 class="mb-1">Room Management</h2>
+    <p class="text-muted small">Manage rooms, view availability and create bookings</p>
+  </div>
+
+  <!-- TOP SECTION -->
+  <div class="row g-4">
+
+  <!-- ================= LEFT PANEL ================= -->
+  <div class="col-md-6">
+
+    <div class="card mb-3 p-3">
+
+      <h5 class="mb-3">Select Room</h5>
+
+      <!-- DROPDOWN -->
+      <select class="form-select" id="roomDropdown">
+        <option>Lecture Hall A</option>
+        <option>Lecture Hall B</option>
+        <option>Computer Lab A</option>
+        <option>Computer Lab B</option>
+        <option>Seminar Room A</option>
+        <option>Seminar Room B</option>
+      </select>
+
+    </div>
+
+    <!-- ROOM DETAILS -->
+    <div class="card p-3">
+
+      <h5 id="roomName" class="mb-3">Room Details</h5>
+
+      <img src="../assets/images/LH.png" class="img-fluid rounded mb-3">
+
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Capacity</span>
+        <span class="fw-semibold">30 pax</span>
+      </div>
+
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Facilities</span>
+        <span class="fw-semibold">Projector, Whiteboard</span>
+      </div>
+
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">PIC</span>
+        <span class="fw-semibold">Admin Office</span>
+      </div>
+
+      <button class="btn btn-success w-100 mt-3"> Book Room </button>
+
+     
+
+    </div>
+
+  </div>
+
+  <!-- ================= RIGHT PANEL ================= -->
+  <div class="col-md-6">
+
+    <!-- CALENDAR -->
+    <div class="card p-3 mb-3">
+
+      <h5 class="mb-3">Check Availability</h5>
+
+      <input type="date" class="form-control mb-3">
+
+      <div id="calendar"></div>
+
+    </div>
+
+    <!-- AVAILABILITY TABLE -->
+    <div class="card p-3">
+
+      <h5 class="mb-3">Availability Details</h5>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Start</th>
+            <th>End</th>
+          </tr>
+        </thead>
+
+        <tbody id="availabilityTable">
+          <tr>
+            <td>22-04-2026</td>
+            <td>10:00</td>
+            <td>12:00</td>
+          </tr>
+
+          <tr>
+            <td>25-04-2026</td>
+            <td>8:00</td>
+            <td>10:00</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="../assets/js/rooms.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking List</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container mt-5 d-flex justify-content-center">
+
+  <!-- ===== MAIN CARD (LIMIT WIDTH) ===== -->
+  <div class="card shadow-sm p-4 w-100" style="max-width: 900px; border-radius: 16px;">
+
+   <h5 class="mb-3 header-title">Booking Log</h5>
+
+    <!-- ===== EMAIL + OTP ROW ===== -->
+    <div class="row g-2 align-items-end">
+
+      <!-- EMAIL -->
+      <div class="col-md-5">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control form-control-sm" placeholder="Enter email">
+      </div>
+
+      <!-- SEND OTP -->
+      <div class="col-md-2">
+        <button class="btn btn-purple btn-sm w-100">Send OTP </button>
+      </div>
+
+      <!-- OTP -->
+      <div class="col-md-3">
+        <label class="form-label">OTP</label>
+        <input type="text" class="form-control form-control-sm" placeholder="Enter OTP">
+      </div>
+
+      <!-- VERIFY OTP -->
+      <div class="col-md-2">
+        <button class="btn btn-purple btn-sm w-100">
+          Verify
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ===== FILTER (OPTIONAL SPACE) ===== -->
+    <hr class="my-3">
+
+    <!-- ===== BOOKING TABLE ===== -->
+    <div>
+
+      <h6 class="mb-2">Your Booking List</h6>
+
+      <table class="table table-hover table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Book ID</th>
+            <th>Room</th>
+            <th>Date</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>BK001</td>
+            <td>Meeting Room A</td>
+            <td>2026-04-24</td>
+            <td>10:00</td>
+            <td>12:00</td>
+            <td><span class="badge bg-warning">Pending</span></td>
+          </tr>
+
+          <tr>
+            <td>BK002</td>
+            <td>Lab 1</td>
+            <td>2026-04-23</td>
+            <td>09:00</td>
+            <td>11:00</td>
+            <td><span class="badge bg-success">Approved</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <!-- ===== ROOM BUTTON ===== -->
+    <div class="mt-3 d-flex justify-content-end">
+      <a href="/rooms" class="btn btn-green btn-sm">
+        Back to Room Page
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

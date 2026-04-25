@@ -1,0 +1,24 @@
+/* WRAPPER */
+.pagination-wrapper {
+  align-items: center;
+}
+
+/* PAGE BUTTON */
+.page-btn {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #f1f5f9;
+  cursor: pointer;
+}
+
+/* ACTIVE PAGE */
+.page-btn.active {
+  background: #6366f1;
+  color: white;
+}
+
+/* HOVER */
+.page-btn:hover {
+  background: #e2e8f0;
+}

@@ -1,0 +1,119 @@
+/* BACKGROUND */
+.bg-soft {
+  background: #f7f8fc;
+  font-family: 'Inter', sans-serif;
+}
+
+/* NAVBAR */
+.premium-nav {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+/* BRAND COLORS */
+.text-primary-custom {
+  color: #9370DB;
+}
+
+/* NOTIFICATION */
+.notif-wrapper {
+  position: relative;
+}
+
+.notif-btn {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #66CDAA;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 20px;
+}
+
+/* CARD */
+.premium-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* INPUTS */
+.premium-input {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+/* BUTTON */
+.btn-primary-custom {
+  background: #9370DB;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 8px 16px;
+}
+
+.btn-primary-custom:hover {
+  background: #7a5ccf;
+}
+
+/* TABLE */
+.premium-table th {
+  font-size: 13px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.premium-table td {
+  font-size: 14px;
+  color: #333;
+}
+
+/* STATUS */
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.approved {
+  background: #d1f7e3;
+  color: #1b7f4b;
+}
+
+.status.rejected {
+  background: #ffe0e0;
+  color: #b00020;
+}
+
+/* ACTION BUTTONS */
+.btn-success {
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.btn-danger {
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.btn-outline-danger {
+  border-radius: 10px;
+  font-size: 13px;
+}

@@ -1,0 +1,160 @@
+body {
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+  border: 5px solid red;
+}
+
+/* Card */
+/* Control card size */
+.confirmation-card {
+  max-width: 750px;   /* 🔥 standard desktop SaaS */
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* Image */
+.room-img {
+  max-height: 220px;
+  object-fit: cover;
+}
+
+/* Table Premium */
+/* Table container look */
+.custom-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+/* Row style */
+.custom-table tr {
+  background: #f5f7ff; /* soft purple tint */
+  border-left: 4px solid #6366f1; /* accent line */
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+.custom-table tr:hover {
+  background: #eef2ff;
+  transform: translateY(-1px);
+}
+
+/* Cell */
+.custom-table td {
+  padding: 12px 14px;
+  border: none;
+}
+
+/* Label (kiri) */
+.custom-table .label {
+  width: 40%;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Value (kanan) */
+.custom-table td:last-child {
+  width: 60%;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Button Confirm */
+
+
+/* FORCE BUTTON STYLE (MOST STABLE) */
+/* PRIMARY BUTTON */
+.btn-confirm {
+  background-color: #6366f1 !important;  /* purple solid */
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(99,102,241,0.25);
+}
+
+/* HOVER (soft purple) */
+.btn-confirm:hover {
+  background-color: #a5b4fc !important;  /* soft purple */
+  color: #1f2937 !important;             /* text dark sikit */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(99,102,241,0.2);
+}
+
+/* Button outline */
+.btn-outline-primary {
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+.btn-outline-primary:hover {
+  background-color: #6366f1;
+  color: white;
+}
+
+/* Center table nicely */
+.col-md-8 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Reduce spacing supaya compact */
+.custom-table td {
+  padding: 12px 14px;
+}
+
+/* Container */
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Each row */
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+/* Hover */
+.summary-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Label */
+.summary-item .label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Value */
+.summary-item .value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+  text-align: right;
+}
+
+/* Highlight important rows */
+.summary-item.highlight {
+  background: #ecfdf5; /* soft green */
+  border-left: 4px solid #10b981;
+}
+
+/* Purpose (long text) */
+#purpose {
+  max-width: 60%;
+  text-align: right;
+  color: #374151;
+}

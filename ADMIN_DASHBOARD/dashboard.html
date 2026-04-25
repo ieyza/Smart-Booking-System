@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/dashboard/style/dashboard.css">
+  <link rel="stylesheet" href="/static/dashboard/style/table.css">
+  <link rel="stylesheet" href="/static/dashboard/style/global.css">
+</head>
+
+<body class="bg-soft">
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
+
+<!-- MAIN -->
+<div class="container py-4">
+
+  <!-- TITLE -->
+  <div class="mb-4">
+    <h3 class="fw-bold">Admin Dashboard</h3>
+    <p class="text-muted">Manage bookings in real time</p>
+  </div>
+
+  <!-- FILTER -->
+  <div id="filter"></div>
+
+  <!-- TABLE -->
+  <div id="table-booking"></div>
+
+
+<!-- MODAL -->
+<div id="modal-confirm"></div>
+
+<!-- NOTIFICATION -->
+<div id="notification"></div>
+
+  <!-- MODAL COMPONENT (PUT HERE) -->
+  <div id="modal-confirm"></div>
+
+<!-- MAIN SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // 1️⃣ LOAD NAVBAR FIRST
+  fetch('/static/dashboard/components/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+
+      // 2️⃣ LOAD NAVBAR JS AFTER HTML READY
+      const script = document.createElement('script');
+      script.src = '/static/dashboard/navbar.js';
+      document.body.appendChild(script);
+    });
+
+  // 3️⃣ LOAD TABLE
+  fetch('/static/dashboard/components/table_booking.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('table-booking').innerHTML = html;
+
+      // load booking logic AFTER table ready
+      const script = document.createElement('script');
+      script.src = '/static/dashboard/booking.js';
+      document.body.appendChild(script);
+    });
+
+  // 4️⃣ LOAD MODAL
+  fetch('/static/dashboard/components/modal_confirm.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('modal-confirm').innerHTML = html;
+    });
+
+  // 5️⃣ LOAD NOTIFICATION
+  fetch('/static/dashboard/components/notification-dropdown.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('notification').innerHTML = html;
+    });
+
+});
+</script>
+
+</body>
+</html>

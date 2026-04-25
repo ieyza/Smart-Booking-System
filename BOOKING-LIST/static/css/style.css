@@ -1,0 +1,70 @@
+body {
+  background: #f6f7fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== MAIN CARD ===== */
+.card {
+  border: none;
+}
+
+/* ===== INPUTS ===== */
+.form-control-sm {
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+/* ===== PURPLE BUTTON ===== */
+.btn-purple {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.btn-purple:hover {
+  background: #a78bfa;
+  transform: translateY(-1px);
+}
+
+/* ===== GREEN BUTTON ===== */
+.btn-green {
+  background: linear-gradient(135deg, #22c55e, #86efac);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.btn-green:hover {
+  background: #86efac;
+  transform: translateY(-1px);
+}
+
+/* ===== TABLE ===== */
+.table {
+  font-size: 13px;
+}
+
+/* hover row */
+.table-hover tbody tr:hover {
+  background: #f3f4f6;
+}
+
+/* ===== LABEL ===== */
+.form-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* ===== Header ===== */
+.header-title {
+  font-weight: 600;
+  color: #5b21b6;
+  border-left: 4px solid #a78bfa;
+  padding-left: 10px;
+}

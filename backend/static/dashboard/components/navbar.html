@@ -1,0 +1,36 @@
+<nav class="navbar premium-nav px-4 py-3 d-flex justify-content-between align-items-center">
+
+  <!-- LEFT: ADMIN INFO -->
+<div>
+  <h6 class="mb-0 fw-semibold text-dark">
+    Hi, <span id="adminEmail">-</span>
+  </h6>
+
+  <small id="lastLogin" class="text-muted">
+    Last login: -
+  </small>
+</div>
+
+  <!-- RIGHT: ACTION -->
+  <div class="d-flex align-items-center gap-3">
+
+    <!-- NOTIFICATION BELL (optional trigger later) -->
+    <div class="notif-wrapper position-relative">
+      <button class="btn btn-light btn-sm">
+        🔔
+      </button>
+
+      <!-- badge dummy -->
+      <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+        3
+      </span>
+    </div>
+
+    <!-- LOGOUT -->
+    <button class="btn btn-outline-danger btn-sm" onclick="logout()">
+      Logout
+    </button>
+
+  </div>
+
+</nav>

@@ -1,0 +1,53 @@
+.btn {
+  padding: 12px 22px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* PRIMARY BUTTON - GRADIENT (PURPLE → MINT) */
+.btn-primary {
+  background: linear-gradient(135deg, #9370DB, #66CDAA);
+  color: white;
+  border: none;
+}
+
+/* HOVER PRIMARY */
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(147, 112, 219, 0.25);
+  filter: brightness(1.05);
+}
+
+/* SECONDARY BUTTON - OUTLINE PREMIUM */
+.btn-outline {
+  background: transparent;
+  border: 2px solid #9370DB;
+  color: #9370DB;
+}
+
+/* HOVER SECONDARY */
+.btn-outline:hover {
+  background: #9370DB;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(147, 112, 219, 0.2);
+}
+
+
+/* NEW: SECONDARY BUTTON (MINT GREEN STYLE) */
+.btn-secondary-custom {
+  background: #66CDAA;
+  border: none;
+  color: white;
+}
+
+.btn-secondary-custom:hover {
+  background: #57b99a;
+  transform: translateY(-2px);
+}
